@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 2rem;
+  background-color: steelblue;
+}
+.empty {
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  background: white;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fill {
+  background-image: url("./p1.jpg");
+  height: 100%;
+  width: 100%;
+  cursor: grab;
+  background-size: cover;
+}
+
+.hold {
+  border: 5px dotted #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border: 3px white dashed;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
